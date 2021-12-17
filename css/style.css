@@ -124,3 +124,7 @@ input {
 .addBtn:hover {
     background-color: #bbb;
 }
+
+.active {
+    text-decoration: line-through;
+}

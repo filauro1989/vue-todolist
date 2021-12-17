@@ -37,6 +37,11 @@ const app = new Vue (
                     done: false
                 },
             ]
-        }
-    }
+        },
+        methods: {
+            toggleActive: function(index) {
+                this.todos[index].done = !this.todos[index].done;
+            },
+        },
+    },
 );
