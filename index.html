@@ -14,7 +14,7 @@
         <div id="app" class="container">
             <div id="myDIV" class="header">
                 <h2>My To Do List</h2>
-                <input v-model="todoNew" type="text" id="myInput" placeholder="Text here...">
+                <input v-on:keyup.enter="addTodo" v-model="todoNew" type="text" id="myInput" placeholder="Text here...">
                 <span @click="addTodo" class="addBtn">Add</span>
             </div>
             
