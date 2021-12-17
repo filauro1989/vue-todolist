@@ -19,6 +19,7 @@ const app = new Vue (
     {
         el: '#app',
         data: {
+            todoNew:'',
             todos: [
                 {
                     text: 'fare la spesa',
@@ -44,6 +45,16 @@ const app = new Vue (
             },
             deleteX: function(index) {
                 this.todos.splice(index, 1);
+            },
+            addTodo: function() {
+                if(this.todoNew.length != 0) {
+                    let obj = {
+                        text: this.todoNew,
+                        done: false
+                    }
+                    this.todos.unshift(obj);
+                    this.todoNew = '';
+                }
             }
         },
     },
