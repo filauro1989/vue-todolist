@@ -22,6 +22,18 @@ ul {
 }
 
   /* Style the list items */
+ul li p {
+    display: inline-block;
+    line-height: 2em;
+}
+ul li i {
+    margin-right: 1em;
+    padding: 0.8em 1em;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
 ul li {
     cursor: pointer;
     position: relative;
@@ -29,6 +41,9 @@ ul li {
     background: #eee;
     font-size: 18px;
     transition: 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     /* make the list items unselectable */
     -webkit-user-select: none;
