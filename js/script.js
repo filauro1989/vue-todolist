@@ -42,6 +42,9 @@ const app = new Vue (
             toggleActive: function(index) {
                 this.todos[index].done = !this.todos[index].done;
             },
+            deleteX: function(index) {
+                this.todos.splice(index, 1);
+            }
         },
     },
 );

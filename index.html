@@ -19,7 +19,7 @@
             </div>
             
             <ul id="myUL">
-                <li v-for="(todo, index) in todos"><p  @click="toggleActive(index)" :class="{active: todo.done}">{{ todo.text }}</p><i class="fas fa-times"></i></li>
+                <li v-for="(todo, index) in todos"><p  @click="toggleActive(index)" :class="{active: todo.done}">{{ todo.text }}</p><i @click="deleteX(index)" class="fas fa-times"></i></li>
             </ul>
         </div> 
     </div>   
